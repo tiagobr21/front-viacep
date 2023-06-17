@@ -5,7 +5,7 @@ services:
       context: ./api
       dockerfile: Dockerfile
     ports:
-      - "3080:3080"
+      - "3000:3000"
     container_name: node-api
     restart: unless-stopped
     volumes:
@@ -16,7 +16,7 @@ services:
       context: ./app-ui
       dockerfile: Dockerfile
     ports:
-      - "4201:4201"
+      - "4200:4200"
     container_name: angular-ui
     restart: unless-stopped
     volumes:

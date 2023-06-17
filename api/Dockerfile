@@ -6,6 +6,6 @@ COPY package*.json ./
 
 RUN npm install && npm i nodemon
 
-EXPOSE 3080
+EXPOSE 3000
 
 CMD ["npm", "run", "dev"]

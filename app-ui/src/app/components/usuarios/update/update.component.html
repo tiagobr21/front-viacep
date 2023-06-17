@@ -1,0 +1,52 @@
+   <div id="body">
+        <form [formGroup]="userForm" class="row g-3">
+
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nome</label>
+              <input type="text" [(ngModel)]="response.nome" formControlName="nome" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Idade</label>
+              <input type="text" [(ngModel)]="response.idade" formControlName="idade" class="form-control" id="inputPassword4" required>
+            </div>
+
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Cep</label>
+              <input type="text" [(ngModel)]="response.cep" formControlName="cep" class="form-control" id="inputAddress" placeholder="00000000" required>
+              
+            </div>
+              
+            
+            <div class="col-md-8">
+              <label for="inputCity" id="section2"  class="form-label">Logradouro</label>
+              <input type="text" [(ngModel)]="response.logradouro" formControlName="logradouro" class="form-control" id="logradouro">
+            </div>
+
+            
+            <div class="col-md-6" id="bairro"> 
+              <label for="inputZip" id="section2" class="form-label">Bairro</label>
+              <input type="text" [(ngModel)]="response.bairro" formControlName="bairro" class="form-control" id="inputZip">
+            </div>
+            
+            <div class="col-md-6">
+                <label for="inputCity" id="section2" class="form-label">Complemento</label>
+                <input type="text" [(ngModel)]="response.complemento" formControlName="complemento" class="form-control" id="inputCity">
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="inputCity" id="section3" class="form-label">Localidade</label>
+                <input type="text" [(ngModel)]="response.localidade" formControlName="localidade" class="form-control" id="inputCity">
+              </div>
+              
+              <div class="col-md-2" id="uf">
+                  <label for="inputCity" id="section3" class="form-label">Uf</label>
+                  <input type="text" [(ngModel)]="response.uf" formControlName="uf" class="form-control" id="inputCity">
+              </div>
+  
+           
+            <div class="col-12">
+              <button type="submit" (click)="ngSubmit()" id="submit" class="btn btn-primary">Atualizar</button>
+            </div>
+          </form>
+</div>

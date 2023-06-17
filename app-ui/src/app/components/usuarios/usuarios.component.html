@@ -1,0 +1,49 @@
+<header>
+  
+    <div id="flex-header">
+      <mat-icon routerLink="/" routerLinkActive="router-link-active" id="icon">insert_drive_file</mat-icon>
+      <a routerLink="/" routerLinkActive="router-link-active" >Cadastro</a>
+      <mat-icon id="icon">account_circle</mat-icon>
+      <a>Usuários</a>
+      <mat-icon routerLink="/buscarcep" routerLinkActive="router-link-active"  id="icon">markunread_mailbox</mat-icon>
+      <a routerLink="/buscarcep" routerLinkActive="router-link-active" >Buscar Cep</a>
+    </div>
+  </header>
+  
+  <mat-card>
+  
+      <mat-card-actions>
+        
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Cep</th>
+                <th scope="col">Logradouro</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Localidade</th>
+                <th scope="col">Uf</th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of response">
+                <td>{{item.nome}}</td>
+                <td>{{item.idade}}</td>
+                <td>{{item.cep}}</td>
+                <td>{{item.logradouro}}</td>
+                <td>{{item.complemento}}</td>
+                <td>{{item.bairro}}</td>
+                <td>{{item.localidade}}</td>
+                <td>{{item.uf}}</td>
+                <div id="actions">
+                    <mat-icon (click)="openUpdate(item.id)" id="edit">edit</mat-icon><br>
+                    <mat-icon (click)="delete(item.id)" id="delete">delete</mat-icon>
+                </div>
+              </tr>
+            </tbody>
+          </table>
+      </mat-card-actions>
+  </mat-card>
+  

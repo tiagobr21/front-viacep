@@ -1,0 +1,43 @@
+<header>
+  
+    <div id="flex-header">
+      <mat-icon routerLink="/" routerLinkActive="router-link-active" id="icon">insert_drive_file</mat-icon>
+      <a routerLink="/" routerLinkActive="router-link-active" >Cadastro</a>
+      <mat-icon routerLink="/usuarios" routerLinkActive="router-link-active" id="icon">account_circle</mat-icon>
+      <a routerLink="/usuarios" routerLinkActive="router-link-active">Usuários</a>
+      <mat-icon routerLink="/buscarcep" routerLinkActive="router-link-active"  id="icon">markunread_mailbox</mat-icon>
+      <a routerLink="/buscarcep" routerLinkActive="router-link-active" >Buscar Cep</a>
+    </div>
+  </header>
+  
+  <mat-card>
+  
+      <mat-card-actions>
+          <form id="form" [formGroup]="userForm" class="row g-3">
+  
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Uf</label>
+                <input type="text" formControlName="uf" class="form-control" id="inputEmail4" required>
+              </div>
+        
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Localidade</label>
+                <input type="text" formControlName="localidade" class="form-control" id="inputPassword4" required>
+              </div>
+  
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Logradouro</label>
+                <input type="text" formControlName="logradouro" class="form-control" id="inputAddress" required>
+                <button type="submit" (click)="searchCep()" id="search" class="btn btn-primary">Buscar</button>
+              </div>
+
+             
+              <mat-card id="responsecep">
+                <div id="cep"> <p>Cep: {{response[0].cep}}</p></div>
+              </mat-card>
+        
+            </form>
+      </mat-card-actions>
+  </mat-card>
+  
+    

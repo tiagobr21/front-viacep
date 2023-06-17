@@ -1,0 +1,102 @@
+*{
+    margin-top: 0;
+    padding: 0;
+   
+}
+
+header{
+    position: relative;
+    top: 65px;
+    left: 15%;
+    width: 70%;
+    height: 60px;
+    padding: auto;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+
+mat-card{
+    width: 70%;
+    height: 75%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;  
+    max-width: 100%;
+}
+
+
+.table{
+   margin-top: -30%;
+   font-size: 15px;
+}
+
+#search{
+    width: auto;
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    
+}
+
+a{
+    margin-left: 30px;
+    cursor: pointer;
+    text-decoration:none;
+    color: black;
+}
+
+#icon{
+    position: relative;
+    left: 28px;
+}
+
+#flex-header{
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 28%;
+}
+
+#flex{
+    display: flex;
+}
+
+
+#submit{
+    width: 20%;
+}
+
+#uf{
+    margin-left: 42%;
+}
+
+#bairro{
+    margin-left: -4cm;
+}
+
+#section2{
+    margin-top: 20px;
+}
+
+#section3{
+    margin-top: 20px;
+}
+
+#search{
+   margin-top: 10px;
+
+}
+
+#edit, #delete{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#actions{
+    display: flex;
+}
